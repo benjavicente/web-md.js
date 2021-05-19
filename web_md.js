@@ -12,6 +12,7 @@
 web_md()
 
 function web_md() {
+  if (window.location.search == "?raw") return
   var markdeep_script = document.createElement("script")
   window.markdeepOptions = { mode: 'script' }
   markdeep_script.src = "https://morgan3d.github.io/markdeep/latest/markdeep.min.js"
